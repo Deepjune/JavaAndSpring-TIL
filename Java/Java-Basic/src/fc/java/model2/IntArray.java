@@ -13,7 +13,6 @@ public class IntArray {
     public void add(int element) {
         if(elements.length == size)
             ensureCapacity(); // 메모리의 크기를 2배로 늘리는 작업
-
         elements[size++] = element;
     }
     private void ensureCapacity() {
